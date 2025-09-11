@@ -1,362 +1,222 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>2泊3日 男3人旅｜大洗・ひたちなか・袋田の滝プラン（磯崎灯台＆磯崎海岸ver.）</title>
-  <style>
-    :root{
-      --bg:#0f172a; --card:#111827; --muted:#9ca3af; --text:#e5e7eb;
-      --accent:#22d3ee; --accent-2:#60a5fa; --chip:#1f2937;
-      --glass:rgba(255,255,255,.06); --stroke:rgba(255,255,255,.12);
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
-      color:var(--text); background:
-        radial-gradient(800px 400px at 10% -10%, rgba(34,211,238,.15), transparent 60%),
-        radial-gradient(800px 400px at 110% 10%, rgba(96,165,250,.12), transparent 60%),
-        linear-gradient(180deg, #0b1020, #0a0f1d 50%, #09101c);
-      min-height:100vh;
-    }
-    .wrap{max-width:1000px; margin:0 auto; padding:20px}
-    header{
-      padding:28px 20px; border:1px solid var(--stroke); border-radius:18px;
-      background: linear-gradient(135deg, rgba(34,211,238,.08), rgba(96,165,250,.06));
-      position:relative; overflow:hidden;
-    }
-    header h1{margin:0 0 8px; font-weight:800; letter-spacing:.3px}
-    header p{margin:0; color:var(--muted)}
-    .badge{
-      display:inline-flex; gap:.4em; align-items:center; font-size:12px; color:var(--text);
-      background:var(--glass); border:1px solid var(--stroke); padding:6px 10px; border-radius:999px;
-    }
-    .grid{display:grid; gap:16px; grid-template-columns: repeat(12, 1fr); margin-top:18px}
-    .card{grid-column: span 12; background:var(--card); border:1px solid var(--stroke); border-radius:16px; overflow:hidden;}
-    @media (min-width:860px){
-      .col-4{grid-column: span 4} .col-8{grid-column: span 8} .col-6{grid-column: span 6} .col-12{grid-column: span 12}
-    }
-    .card .hd{
-      padding:14px 18px; border-bottom:1px solid var(--stroke); display:flex; align-items:center; gap:10px;
-      background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
-    }
-    .chip{background:var(--chip); color:var(--text); border:1px solid var(--stroke); padding:4px 8px; border-radius:999px; font-size:12px;}
-    .day-title{font-weight:800; letter-spacing:.2px; display:flex; align-items:center; gap:10px}
-    .content{padding:16px 18px}
-    .timeline{display:flex; flex-direction:column; gap:12px}
-    .item{
-      display:grid; grid-template-columns: 80px 1fr; gap:14px; padding:12px; border:1px solid var(--stroke);
-      border-radius:12px; background:var(--glass)
-    }
-    .time{font-weight:700; color:#c7d2fe}
-    .place{font-weight:700}
-    .note{color:var(--muted); font-size:13px; margin-top:4px}
-    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
-    .btn{
-      display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; text-decoration:none;
-      color:var(--text); border:1px solid var(--stroke); background:linear-gradient(180deg, rgba(34,211,238,.12), rgba(34,211,238,.08));
-      transition: transform .06s ease, background .2s ease;
-    }
-    .btn:hover{transform: translateY(-1px); background: linear-gradient(180deg, rgba(34,211,238,.18), rgba(34,211,238,.10))}
-    .btn.secondary{background:linear-gradient(180deg, rgba(96,165,250,.12), rgba(96,165,250,.08))}
-    .btn.ghost{background:var(--glass)}
-    .two-col{display:grid; gap:12px}
-    @media (min-width:720px){.two-col{grid-template-columns:1fr 1fr}}
-    .tips{display:flex; flex-direction:column; gap:8px}
-    .tip{font-size:13px; color:var(--muted)}
-    .tiny{font-size:12px; color:var(--muted)}
-    .divider{height:1px; background:var(--stroke); margin:14px 0}
-    footer{color:var(--muted); font-size:12px; text-align:center; margin:24px 0}
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2泊3日 男3人旅｜大洗・ひたちなか・袋田の滝プラン</title>
+<style>
+:root{
+  --bg:#0f172a; --card:#111827; --muted:#9ca3af; --text:#e5e7eb;
+  --accent:#22d3ee; --accent-2:#60a5fa; --chip:#1f2937;
+  --glass:rgba(255,255,255,.06); --stroke:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family: "Segoe UI","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  color:var(--text); background:
+    radial-gradient(800px 400px at 10% -10%, rgba(34,211,238,.15), transparent 60%),
+    radial-gradient(800px 400px at 110% 10%, rgba(96,165,250,.12), transparent 60%),
+    linear-gradient(180deg, #0b1020, #0a0f1d 50%, #09101c);
+  min-height:100vh;
+}
+.wrap{max-width:1000px; margin:0 auto; padding:20px}
+header{
+  padding:28px 20px; border:1px solid var(--stroke); border-radius:18px;
+  background: linear-gradient(135deg, rgba(34,211,238,.08), rgba(96,165,250,.06));
+}
+header h1{margin:0 0 8px; font-weight:800}
+header p{margin:0; color:var(--muted)}
+.badge{
+  display:inline-flex; gap:.4em; align-items:center; font-size:12px;
+  background:var(--glass); border:1px solid var(--stroke); padding:6px 10px; border-radius:999px;
+}
+.grid{display:grid; gap:16px; grid-template-columns: repeat(12, 1fr); margin-top:18px}
+.card{grid-column: span 12; background:var(--card); border:1px solid var(--stroke); border-radius:16px; overflow:hidden;}
+.card .hd{
+  padding:14px 18px; border-bottom:1px solid var(--stroke); display:flex; align-items:center; gap:10px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), transparent);
+}
+.chip{background:var(--chip); border:1px solid var(--stroke); padding:4px 8px; border-radius:999px; font-size:12px;}
+.day-title{font-weight:800; display:flex; align-items:center; gap:10px}
+.content{padding:16px 18px}
+.timeline{display:flex; flex-direction:column; gap:12px}
+.item{
+  display:grid; grid-template-columns: 80px 1fr; gap:14px; padding:12px; border:1px solid var(--stroke);
+  border-radius:12px; background:var(--glass)
+}
+.time{font-weight:700; color:#c7d2fe}
+.place{font-weight:700}
+.note{color:var(--muted); font-size:13px; margin-top:4px}
+.btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; text-decoration:none;
+  color:var(--text); border:1px solid var(--stroke); background:linear-gradient(180deg, rgba(34,211,238,.12), rgba(34,211,238,.08));
+}
+.btn.secondary{background:linear-gradient(180deg, rgba(96,165,250,.12), rgba(96,165,250,.08))}
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="badge">🚆→🚘 男3人 2泊3日｜海・自然・温泉・グルメ</div>
-      <h1>大洗・ひたちなか・袋田の滝 2泊3日旅</h1>
-      <p>日程：9/13(土)–9/15(月・祝)｜宿：東海駅付近の友人宅｜移動：行き帰りは特急（現地は車）</p>
-    </header>
+<div class="wrap">
+<header>
+  <div class="badge">🚆→🚘 男3人 2泊3日｜海・自然・温泉・グルメ</div>
+  <h1>大洗・ひたちなか・袋田の滝 2泊3日旅</h1>
+  <p>日程：9/13(土)–9/15(月・祝)｜宿：東海駅付近の友人宅｜移動：特急＋現地車</p>
+</header>
 
-    <!-- アクセス -->
-    <section class="grid" aria-label="アクセス">
-      <div class="card col-12">
-        <div class="hd">
-          <div class="day-title">🚆 アクセス（往復）</div>
-          <span class="chip">行き：東京 10:23発 特急ときわ → 勝田</span>
-        </div>
-        <div class="content two-col">
-          <div>
-            <div class="timeline">
-              <div class="item">
-                <div class="time">10:23</div>
-                <div>
-                  <div class="place">東京駅 出発（特急 ときわ）</div>
-                  <div class="note">指定席でゆったり。車内で軽食をどうぞ。</div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="time">11:47 目安</div>
-                <div>
-                  <div class="place">勝田駅 到着・合流</div>
-                  <div class="note">駅前で友人の車に乗り換え。ドリンク補給して出発。</div>
-                </div>
-              </div>
-            </div>
-            <div class="btns">
-              <a class="btn ghost" href="https://www.google.com/maps/dir/東京駅/勝田駅/" target="_blank" rel="noopener">Googleマップで電車ルート</a>
-            </div>
-            <p class="tiny">到着時刻は目安。列車により若干前後します。</p>
-          </div>
-          <div>
-            <div class="timeline">
-              <div class="item">
-                <div class="time">夕方〜夜</div>
-                <div>
-                  <div class="place">勝田駅 → 東京駅（特急 ひたち／ときわ）</div>
-                  <div class="note">帰りは当日のペースで選択。指定席は早めに確保を。</div>
-                </div>
-              </div>
-            </div>
-            <div class="btns">
-              <a class="btn ghost" href="https://www.google.com/maps/dir/勝田駅/東京駅/" target="_blank" rel="noopener">帰りの電車ルート</a>
-            </div>
-          </div>
-        </div>
+<!-- 1日目 -->
+<section class="grid">
+  <div class="card col-12">
+    <div class="hd"><div class="day-title">🌊 1日目｜水族館・市場・灯台＆海岸散策</div></div>
+    <div class="content">
+      <div class="timeline">
+        <div class="item"><div class="time">10:23</div><div><div class="place">東京駅発（特急ときわ）</div></div></div>
+        <div class="item"><div class="time">11:47</div><div><div class="place">勝田駅着・車移動開始</div></div></div>
+        <div class="item"><div class="time">12:40–14:00</div><div><div class="place">アクアワールド大洗</div></div></div>
+        <div class="item"><div class="time">14:10–15:00</div><div><div class="place">那珂湊おさかな市場で昼食</div></div></div>
+        <div class="item"><div class="time">15:15–16:00</div><div><div class="place">磯崎灯台</div></div></div>
+        <div class="item"><div class="time">16:05–16:35</div><div><div class="place">磯崎海岸散策</div></div></div>
+        <div class="item"><div class="time">16:45–17:30</div><div><div class="place">阿字ヶ浦温泉 のぞみ</div></div></div>
+        <div class="item"><div class="time">18:00</div><div><div class="place">友人宅泊</div></div></div>
       </div>
-    </section>
-
-    <!-- 1日目 -->
-    <section class="grid" aria-label="1日目">
-      <div class="card col-12">
-        <div class="hd">
-          <div class="day-title">🌊 1日目｜水族館・市場・灯台＆海岸散策（9/13 土）</div>
-          <span class="chip">ペース：⏱ 余裕あり（遅めIN対応）</span>
-        </div>
-        <div class="content">
-          <div class="timeline">
-            <div class="item">
-              <div class="time">12:10</div>
-              <div>
-                <div class="place">勝田駅 → アクアワールド大洗（車 約30分）</div>
-                <div class="note">昼過ぎはやや混雑。先に観たい展示を優先。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">12:40–14:00</div>
-              <div>
-                <div class="place">アクアワールド大洗（水族館）</div>
-                <div class="note">サメ・イルカ・マンボウを軸に回遊。館内涼しく休憩にも◎。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">14:10–15:00</div>
-              <div>
-                <div class="place">那珂湊おさかな市場で昼食</div>
-                <div class="note">海鮮丼／浜焼き。市場散策は食後にさくっと。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">15:15–16:00</div>
-              <div>
-                <div class="place">磯崎灯台（ひたちなか）</div>
-                <div class="note">白亜の灯台と太平洋のパノラマ。夕方の光が写真映え。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">16:05–16:35</div>
-              <div>
-                <div class="place">磯崎海岸 散策</div>
-                <div class="note">岩場＋砂浜で波音を満喫。足元は滑りやすい箇所あり注意。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">16:45–17:30</div>
-              <div>
-                <div class="place">阿字ヶ浦温泉 のぞみ</div>
-                <div class="note">海ビューの露天でリラックス。タオル持参だと楽。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">18:00</div>
-              <div>
-                <div class="place">友人宅（東海駅付近）へ</div>
-                <div class="note">夜は宅飲み or 近隣居酒屋。運転者はノンアルで。</div>
-              </div>
-            </div>
-          </div>
-          <div class="btns">
-            <a class="btn" href="https://www.google.com/maps/dir/勝田駅/アクアワールド茨城県大洗水族館/那珂湊おさかな市場/磯崎灯台/磯崎海岸/阿字ヶ浦温泉のぞみ/東海駅/" target="_blank" rel="noopener">1日目 現地ドライブルート</a>
-            <a class="btn secondary" href="https://www.google.com/maps/place/磯崎灯台/" target="_blank" rel="noopener">磯崎灯台を地図で見る</a>
-            <a class="btn secondary" href="https://www.google.com/maps/place/磯崎海岸/" target="_blank" rel="noopener">磯崎海岸を地図で見る</a>
-          </div>
-        </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/勝田駅/アクアワールド茨城県大洗水族館/那珂湊おさかな市場/磯崎灯台/磯崎海岸/阿字ヶ浦温泉のぞみ/東海駅/" target="_blank">1日目ルート</a>
       </div>
-    </section>
-
-    <!-- 2日目 -->
-    <section class="grid" aria-label="2日目">
-      <div class="card col-12">
-        <div class="hd">
-          <div class="day-title">🎣 2日目｜涸沼でハゼ釣り＋コキア＋海見え温泉（9/14 日）</div>
-          <span class="chip">ペース：⏱ ややタイト（満潮前後狙い）</span>
-        </div>
-        <div class="content">
-          <div class="timeline">
-            <div class="item">
-              <div class="time">08:00 発</div>
-              <div>
-                <div class="place">東海 → 涸沼（車 約40分）</div>
-                <div class="note">釣り場は「大貫橋」「広浦公園」周辺が足場良好。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">08:45–12:00</div>
-              <div>
-                <div class="place">涸沼でハゼ釣り</div>
-                <div class="note">エサはアオイソメ、チョイ投げ仕掛け（5〜10号）でOK。満潮前後が狙い目。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">12:00–13:00</div>
-              <div>
-                <div class="place">湖畔でBBQランチ</div>
-                <div class="note">釣果＋持ち込み食材。火消し・ごみ持ち帰り徹底。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">13:45–15:30</div>
-              <div>
-                <div class="place">国営ひたち海浜公園（コキア）</div>
-                <div class="note">9月中旬は色づき始め。日陰少なめ、帽子＆給水必須。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">16:20–17:50</div>
-              <div>
-                <div class="place">湯楽の里 日立（海一望の温泉）</div>
-                <div class="note">夕景が美味しい時間帯。塩分・水分補給も忘れずに。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">18:30</div>
-              <div>
-                <div class="place">友人宅に帰還・夕食</div>
-                <div class="note">干し芋×バニラで糖分チャージ。明日に備えて早めに休憩。</div>
-              </div>
-            </div>
-          </div>
-          <div class="btns">
-            <a class="btn" href="https://www.google.com/maps/dir/東海駅/涸沼/広浦公園/大貫橋/国営ひたち海浜公園/湯楽の里日立/東海駅/" target="_blank" rel="noopener">2日目 現地ドライブルート</a>
-            <a class="btn secondary" href="https://www.google.com/maps/place/広浦公園/" target="_blank" rel="noopener">広浦公園（釣り場）</a>
-            <a class="btn secondary" href="https://www.google.com/maps/place/大貫橋/" target="_blank" rel="noopener">大貫橋（釣り場）</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3日目 -->
-    <section class="grid" aria-label="3日目">
-      <div class="card col-12">
-        <div class="hd">
-          <div class="day-title">🌄 3日目｜袋田の滝とご当地ランチ（9/15 月・祝）</div>
-          <span class="chip">ペース：⏱ 余裕あり</span>
-        </div>
-        <div class="content">
-          <div class="timeline">
-            <div class="item">
-              <div class="time">07:30 発</div>
-              <div>
-                <div class="place">東海 → 袋田の滝（車 約1時間30分）</div>
-                <div class="note">山道はカーブ多め。薄手の羽織があると安心。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">09:15–11:00</div>
-              <div>
-                <div class="place">袋田の滝（観瀑台・トンネル・吊り橋）</div>
-                <div class="note">ミストで滑りやすいので足元注意。広角レンズが映える。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">11:20–12:20</div>
-              <div>
-                <div class="place">大子町ランチ（奥久慈しゃも／蕎麦）</div>
-                <div class="note">人気店は早着が正解。売り切れ御免もあり。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">14:30</div>
-              <div>
-                <div class="place">勝田駅で解散準備</div>
-                <div class="note">お土産＆荷物整理。運転者にねぎらいを。</div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="time">夕方〜夜</div>
-              <div>
-                <div class="place">特急で東京駅へ</div>
-                <div class="note">旅の余韻を写真でシェアして締めよう。</div>
-              </div>
-            </div>
-          </div>
-          <div class="btns">
-            <a class="btn" href="https://www.google.com/maps/dir/東海駅/袋田の滝/大子町/勝田駅/" target="_blank" rel="noopener">3日目 現地ドライブルート</a>
-            <a class="btn secondary" href="https://www.google.com/maps/dir/勝田駅/東京駅/" target="_blank" rel="noopener">帰路（勝田 → 東京）</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 持ち物と小ワザ -->
-    <section class="grid" aria-label="準備とコツ">
-      <div class="card col-6">
-        <div class="hd"><div class="day-title">🎒 持ち物チェック</div></div>
-        <div class="content">
-          <ul class="tips">
-            <li class="tip"><b>必携:</b> タオル2枚（温泉＆海）、モバイルバッテリー、少額現金、保険証コピー</li>
-            <li class="tip"><b>海・散策:</b> マリンシューズ or グリップの効く靴、帽子、ウェットティッシュ</li>
-            <li class="tip"><b>釣り:</b> 偏光サングラス、日焼け止め、虫よけ、クーラーバッグ、保冷剤</li>
-            <li class="tip"><b>BBQ:</b> 着火剤、トング、ゴミ袋、耐熱手袋、アルミホイル</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card col-6">
-        <div class="hd"><div class="day-title">🧠 うまく回る小ワザ</div></div>
-        <div class="content">
-          <ul class="tips">
-            <li class="tip"><b>駐車:</b> 市場はピーク前IN、海浜公園は第1満車なら第4〜臨時へ迂回</li>
-            <li class="tip"><b>混雑:</b> 温泉は夕焼け前か夜に分散、人気展示は最初に</li>
-            <li class="tip"><b>安全:</b> 海岸の岩は滑りやすい・波打ち際に寄りすぎない・濡れたら保温</li>
-            <li class="tip"><b>釣果UP:</b> 満潮前後を狙い、エサはこまめに付け替える（匂い・動き重視）</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="grid" aria-label="ルートまとめ">
-      <div class="card col-12">
-        <div class="content">
-          <div class="two-col">
-            <div>
-              <div class="btns">
-                <a class="btn" href="https://www.google.com/maps/dir/東京駅/勝田駅/" target="_blank" rel="noopener">行き：東京 → 勝田（10:23発）</a>
-                <a class="btn" href="https://www.google.com/maps/dir/勝田駅/アクアワールド茨城県大洗水族館/那珂湊おさかな市場/磯崎灯台/磯崎海岸/阿字ヶ浦温泉のぞみ/東海駅/" target="_blank" rel="noopener">DAY1 ドライブルート</a>
-              </div>
-            </div>
-            <div>
-              <div class="btns">
-                <a class="btn secondary" href="https://www.google.com/maps/dir/東海駅/涸沼/広浦公園/大貫橋/国営ひたち海浜公園/湯楽の里日立/東海駅/" target="_blank" rel="noopener">DAY2 ドライブルート</a>
-                <a class="btn secondary" href="https://www.google.com/maps/dir/東海駅/袋田の滝/大子町/勝田駅/" target="_blank" rel="noopener">DAY3 ドライブルート</a>
-              </div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <p class="tiny">潮位・駐車場・営業時間リンク付きの「完全版」も用意できます。必要なら言ってください。</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>Have a fun boys’ trip. 海風と湖風、両方味わってこそ、この旅は完成。🚗💨</footer>
+    </div>
   </div>
+</section>
+<!-- 2日目 -->
+<section class="grid">
+  <div class="card col-12">
+    <div class="hd">
+      <div class="day-title">🎣 2日目｜涸沼＆霞ヶ浦 がっつり釣りデー</div>
+      <span class="chip">朝マズメ〜夕方まで釣り三昧</span>
+    </div>
+    <div class="content">
+      <div class="timeline">
+        <div class="item">
+          <div class="time">05:30</div>
+          <div>
+            <div class="place">起床・準備</div>
+            <div class="note">朝食は軽く、釣り具と氷を準備</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">06:00</div>
+          <div>
+            <div class="place">東海 → 涸沼</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">06:40–11:00</div>
+          <div>
+            <div class="place">涸沼でハゼ釣り（第1ラウンド）</div>
+            <div class="note">大貫橋や広浦公園で満潮前後を狙う</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">11:00–12:00</div>
+          <div>
+            <div class="place">湖畔で軽昼食</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">12:00–15:00</div>
+          <div>
+            <div class="place">涸沼 or 霞ヶ浦西岸で釣り（第2ラウンド）</div>
+            <div class="note">霞ヶ浦ではワカサギやバスも狙える</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">15:00–16:00</div>
+          <div>
+            <div class="place">釣果整理・片付け</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">16:20–17:50</div>
+          <div>
+            <div class="place">湯楽の里 日立</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">18:30</div>
+          <div>
+            <div class="place">友人宅泊・釣果で晩酌</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2日目のコツ -->
+      <h4>🎯 涸沼ハゼ釣りのコツ</h4>
+      <ul class="tips">
+        <li class="tip"><b>潮と時間帯:</b> 満潮前後2時間が狙い目。朝マズメは活性が高く型も良い。</li>
+        <li class="tip"><b>ポイント:</b> 大貫橋・広浦公園は足場良好。流れ込みやカケアガリも◎。</li>
+        <li class="tip"><b>仕掛け:</b> チョイ投げ（5〜10号）や延べ竿シモリ仕掛け。ハリは流線7〜8号。</li>
+        <li class="tip"><b>エサ:</b> アオイソメを1〜2cmに切ってチョン掛け。こまめに交換。</li>
+        <li class="tip"><b>小ワザ:</b> アタリ後は一呼吸置いて合わせる。同じ場所で釣れなければ5〜10m移動。</li>
+        <li class="tip"><b>鮮度管理:</b> クーラーボックス＋氷で午前・午後2回補充。</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/東海駅/涸沼/広浦公園/大貫橋/霞ヶ浦/湯楽の里日立/東海駅/" target="_blank">2日目ルート</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 3日目 -->
+<section class="grid">
+  <div class="card col-12">
+    <div class="hd">
+      <div class="day-title">🌄 3日目｜袋田の滝とご当地ランチ</div>
+      <span class="chip">絶景で締めくくり</span>
+    </div>
+    <div class="content">
+      <div class="timeline">
+        <div class="item">
+          <div class="time">07:30</div>
+          <div>
+            <div class="place">東海 → 袋田の滝（車 約1時間30分）</div>
+            <div class="note">山道はカーブ多め。朝は涼しいので羽織を。</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">09:15–11:00</div>
+          <div>
+            <div class="place">袋田の滝観光</div>
+            <div class="note">観瀑台・吊り橋・トンネルを巡る。ミストで滑りやすいので注意。</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">11:20–12:20</div>
+          <div>
+            <div class="place">大子町でランチ</div>
+            <div class="note">奥久慈しゃも料理や蕎麦が人気。早め到着で確保。</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">14:30</div>
+          <div>
+            <div class="place">勝田駅へ移動・解散準備</div>
+            <div class="note">お土産購入＆荷物整理。</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">夕方〜夜</div>
+          <div>
+            <div class="place">特急で東京駅へ</div>
+            <div class="note">旅の余韻を語りながら帰路に。</div>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://www.google.com/maps/dir/東海駅/袋田の滝/大子町/勝田駅/" target="_blank">3日目ルート</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Have a fun boys’ trip. 海と湖と滝、全部制覇して最高の思い出を！🚗💨
+</footer>
+</div>
 </body>
 </html>
