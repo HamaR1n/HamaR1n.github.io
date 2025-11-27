@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伊香保温泉 1泊2日 旅のしおり</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #444;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #d35400; /* 紅葉色 */
+            margin: 0;
+            font-size: 24px;
+        }
+        .date {
+            color: #777;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        h2 {
+            background-color: #fdf2e9;
+            color: #d35400;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 18px;
+            margin-top: 30px;
+            border-left: 5px solid #d35400;
+        }
+        .event {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #ddd;
+            position: relative;
+        }
+        .event::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: #d35400;
+            border-radius: 50%;
+        }
+        .time {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+            display: block;
+        }
+        .title {
+            font-weight: bold;
+            color: #d35400;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .note {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .tips-section {
+            background-color: #eaf2f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .tips-section h3 {
+            margin-top: 0;
+            color: #2980b9;
+            font-size: 16px;
+        }
+        .tips-section ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        .tips-section li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #aaa;
+        }
+        /* Mobile adjustment */
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>🍁 伊香保温泉 旅のしおり</h1>
+        <div class="date">2025年11月29日(土) 〜 11月30日(日)</div>
+    </header>
+
+    <section>
+        <h2>1日目：11月29日(土)</h2>
+        
+        <div class="event">
+            <span class="time">11:05</span>
+            <span class="title">バスタ新宿 出発</span>
+            <div class="description">🚌 高速バスで出発！おやつを食べてゆったり移動。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">13:42</span>
+            <span class="title">伊香保温泉（石段街）到着</span>
+            <div class="description">まずは石段街の雰囲気を満喫。遅めのランチ（水沢うどん等）や食べ歩きを。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">15:00</span>
+            <span class="title">「楓と樹」チェックイン</span>
+            <div class="description">荷物を置いてひと休み。身軽になって散策へ。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">16:00</span>
+            <span class="title">河鹿橋（かじかばし）散策</span>
+            <div class="description">夕暮れの赤い橋へ。写真スポットとして最高です。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">18:00</span>
+            <span class="title">夕食</span>
+            <div class="description">石段街の居酒屋や食事処へ（※要事前確認・予約推奨）。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">20:00</span>
+            <span class="title">宿で温泉タイム</span>
+            <div class="description">伊香保の名湯でゆっくり疲れを癒やしましょう。</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2日目：11月30日(日)</h2>
+
+        <div class="event">
+            <span class="time">10:00</span>
+            <span class="title">チェックアウト</span>
+            <div class="description">荷物を持って出発。タクシー等で移動がおすすめ。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">11:00</span>
+            <span class="title">陶芸体験（陶句郎窯）</span>
+            <div class="description">📍 伊香保焼 陶句郎窯<br>「ちょっとだけロクロ体験コース」で思い出作り。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">12:15</span>
+            <span class="title">ランチ</span>
+            <div class="description">窯の近くや移動途中で、名物グルメを堪能。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">13:30</span>
+            <span class="title">伊香保グリーン牧場</span>
+            <div class="description">🐑 シープドッグショー、動物とのふれあい、濃厚ソフトクリームを楽しむ。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">16:30</span>
+            <span class="title">温泉街へ戻る・最終散策</span>
+            <div class="description">日帰り入浴でさっぱりするか、カフェでお土産選び＆休憩。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">18:57</span>
+            <span class="title">伊香保温泉（石段街）発</span>
+            <div class="description">🚌 高速バスで帰路へ。寝てしまっても新宿まで直行！</div>
+        </div>
+
+        <div class="event">
+            <span class="time">21:35</span>
+            <span class="title">バスタ新宿 到着</span>
+            <div class="description">お疲れ様でした！</div>
+        </div>
+    </section>
+
+    <section class="tips-section">
+        <h3>💡 旅のヒント・メモ</h3>
+        <ul>
+            <li><strong>防寒対策：</strong>11月末の伊香保は寒いです（夜は氷点下近く）。厚手の上着やマフラーを忘れずに。</li>
+            <li><strong>移動手段：</strong>2日目の「宿→窯→牧場」は距離があります。タクシー（アプリ「GO」等）の利用がスムーズです。</li>
+            <li><strong>バス乗車：</strong>帰りのバス停へは時間に余裕を持って移動しましょう。</li>
+        </ul>
+    </section>
+
+    <footer>
+        Have a nice trip!
+    </footer>
+</div>
+
+</body>
+</html>
