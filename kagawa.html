@@ -3,104 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>香川（讃岐）GW旅行計画 5/2-5/4 確定版</title>
+    <title>香川（讃岐）GW旅行計画 2026 確定版ガイド</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; background-color: #f8fafc; }
-        h1 { color: #1e293b; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; text-align: center; font-size: 1.6em; }
-        h2 { background-color: #3b82f6; color: white; padding: 12px; border-radius: 8px; margin-top: 30px; font-size: 1.2em; }
-        .card { background: white; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
-        .time { font-weight: bold; color: #2563eb; display: inline-block; width: 60px; }
-        .map-btn { display: inline-block; margin-top: 12px; padding: 10px 24px; background-color: #2563eb; color: white; text-decoration: none; border-radius: 30px; font-size: 0.9em; font-weight: bold; }
-        .important { color: #dc2626; font-weight: bold; background-color: #fef2f2; padding: 12px; border-radius: 8px; border-left: 5px solid #dc2626; margin: 15px 0; }
-        
-        /* PDFセクション（最上部配置） */
-        .pdf-section { margin: 20px 0 40px; text-align: center; border-bottom: 2px dashed #cbd5e1; padding-bottom: 20px; }
-        .pdf-download-btn { display: block; width: 100%; max-width: 350px; margin: 15px auto; padding: 18px; background-color: #10b981; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3); font-size: 1.1em; }
-        .pdf-view-container { border: 2px solid #cbd5e1; border-radius: 12px; overflow: hidden; background: #fff; display: none; margin-top: 20px; }
-        
-        /* モバイル対応：PC（幅600px以上）の場合のみ埋め込みを表示 */
-        @media screen and (min-width: 600px) {
-            .pdf-view-container { display: block; }
-            .mobile-only { display: none; }
-        }
-        a { color: #2563eb; text-decoration: none; font-weight: bold; }
-        .shopping-list { font-size: 0.95em; color: #475569; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 15px; background-color: #f1f5f9; }
+        h1 { color: #0f172a; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; text-align: center; font-size: 1.4em; }
+        h2 { background-color: #3b82f6; color: white; padding: 10px; border-radius: 6px; margin-top: 25px; font-size: 1.1em; display: flex; justify-content: space-between; }
+        .card { background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .time-box { display: flex; align-items: flex-start; margin-bottom: 12px; }
+        .time { font-weight: bold; color: #3b82f6; width: 55px; flex-shrink: 0; font-size: 1.1em; }
+        .desc { flex-grow: 1; }
+        .desc strong { display: block; font-size: 1.05em; margin-bottom: 2px; }
+        .map-btn { display: inline-block; margin-top: 8px; padding: 8px 16px; background-color: #3b82f6; color: white; text-decoration: none; border-radius: 20px; font-size: 0.85em; font-weight: bold; }
+        .important { color: #be123c; font-weight: bold; background-color: #fff1f2; padding: 10px; border-radius: 6px; border: 1px solid #fda4af; margin: 10px 0; font-size: 0.95em; }
+        .tip { font-size: 0.85em; color: #64748b; background: #f8fafc; padding: 8px; border-radius: 4px; margin-top: 5px; }
+        .pdf-section { margin-bottom: 25px; text-align: center; }
+        .pdf-btn { display: block; width: 100%; padding: 15px; background-color: #10b981; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em; }
+        .pdf-view { display: none; margin-top: 15px; border: 1px solid #cbd5e1; border-radius: 8px; height: 500px; }
+        @media screen and (min-width: 600px) { .pdf-view { display: block; } }
+        a { color: #2563eb; text-decoration: none; }
     </style>
 </head>
 <body>
 
-<h1>香川（讃岐）GW旅行：2泊3日パーフェクトガイド</h1>
+<h1>香川（讃岐）GWパーフェクトガイド</h1>
 
-<!-- PDFセクション：タイトルの直下に配置 -->
+<!-- PDFセクション（最上部） -->
 <div class="pdf-section">
-    <div class="important mobile-only">
-        📱 Android/iPhoneをご利用の方：<br>
-        下のボタンをタップしてPDFガイドを確認してください。
-    </div>
-    
-    <a href="Setouchi_Escape.pdf" class="pdf-download-btn" target="_blank">📄 旅のしおり(PDF)を開く</a>
-
-    <div class="pdf-view-container">
-        <div style="background: #64748b; color: white; padding: 10px; font-weight: bold;">
-            PC版プレビュー：瀬戸内エスケープ
-        </div>
-        <div style="height: 600px;">
-            <object data="Setouchi_Escape.pdf" type="application/pdf" width="100%" height="100%">
-                <p>表示できない場合は <a href="Setouchi_Escape.pdf">こちらをクリック</a></p>
-            </object>
-        </div>
+    <a href="Setouchi_Escape.pdf" class="pdf-btn" target="_blank">📄 旅のしおり(PDF)を表示</a>
+    <div class="pdf-view">
+        <object data="Setouchi_Escape.pdf" type="application/pdf" width="100%" height="100%">
+            <p>PDFを表示できません。<a href="Setouchi_Escape.pdf">こちらからダウンロード</a></p>
+        </object>
     </div>
 </div>
 
 <div class="important">
-    🚨 【サバイバル・アラート】女木島にはコンビニがありません。5/3の日曜日は島内の商店も休業するため、乗船前の高松での買い出しは「絶対条件」です！ [1, 2]
+    🚨 【重要】女木島にはコンビニがありません。日曜日は商店も休みです。5/3 13:00の高松市内での買い出しは必須ミッションです！ [1, 2]
 </div>
 
-<h2>【1日目】5/2（土）：うどん伝説と参道の宿</h2>
+<h2>Day 1：5/2(土) 讃岐の洗礼 <span>レンタカー</span></h2>
 <div class="card">
-    <p><span class="time">13:00</span> <strong><a href="https://maps.google.com/?q=高松空港">高松空港</a> 到着</strong> [3, 4]</p>
-    <p>タイムズカーで出発。伝説のうどん名店「がもう」や「山越」へ直行。 [3, 5]</p>
+    <div class="time-box">
+        <div class="time">13:00</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=高松空港">高松空港</a> 到着</strong>
+            空港到着後、タイムズカー高松空港店で配車 [3]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">13:45</div>
+        <div class="desc">
+            <strong>うどん1軒目：<a href="https://maps.google.com/?q=がもううどん">がもううどん</a> or <a href="https://maps.google.com/?q=山越うどん">山越うどん</a></strong>
+            GWは14時前後が狙い目です [3]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">15:00</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=琴平グランドホテル+桜の抄">桜の抄</a> 到着・荷物預け</strong>
+            参道22段目に面した好立地。車を置いてすぐ参拝へ [3]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">15:30</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=金刀比羅宮">金刀比羅宮（こんぴらさん）</a> 参拝</strong>
+            御本宮まで785段。夕方の涼しい風を感じながら登ります [3]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">18:00</div>
+        <div class="desc">
+            <strong>夕食（展望レストラン ゐきり）</strong>
+            温泉と美食で初日を締めくくります [3]。
+        </div>
+    </div>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=高松空港&destination=琴平グランドホテル+桜の抄&waypoints=がもううどん" class="map-btn">📍 1日目の全ルートを表示</a>
 </div>
-<div class="card">
-    <p><span class="time">15:00</span> <strong><a href="https://maps.google.com/?q=琴平グランドホテル+桜の抄">桜の抄</a> 到着</strong> [3, 5]</p>
-    <p>参道22段目に面した宿の好立地を活かし、そのまま「こんぴらさん」参拝へ。 [3, 5]</p>
-</div>
-<a href="https://www.google.com/maps/dir/?api=1&origin=高松空港&destination=琴平グランドホテル+桜の抄&waypoints=がもううどん" class="map-btn">📍 1日目のルートを表示</a>
 
-<h2>【2日目】5/3（日）：聖地巡礼から女木島上陸</h2>
+<h2>Day 2：5/3(日) 島グランピングへ <span>レンタカー → 船</span></h2>
 <div class="card">
-    <p><span class="time">12:30</span> <strong>高松駅周辺でレンタカー返却</strong> [2, 6]</p>
-    <p>13:00の返却期限を厳守。その後、三越等で夕食の買い出し（讃岐牛やお酒）を済ませます。 [2, 7]</p>
+    <div class="time-box">
+        <div class="time">08:30</div>
+        <div class="desc">
+            <strong>宿の朝食を堪能</strong>
+            「桜の抄」自慢の朝食をゆっくり楽しみます。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">10:00</div>
+        <div class="desc"><strong>チェックアウト</strong></div>
+    </div>
+    <div class="time-box">
+        <div class="time">10:30</div>
+        <div class="desc">
+            <strong>うどん2軒目：<a href="https://maps.google.com/?q=山内うどん">山内うどん</a> or <a href="https://maps.google.com/?q=長田in香の香">長田 in 香の香</a></strong>
+            チェックアウト後の「軽く一杯」。薪釜で茹でる伝統の味などを楽しみます [2]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">12:30</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=高松駅">高松駅</a>前でレンタカー返却</strong>
+            13:00の期限までに返却を完了させます [2]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">13:00</div>
+        <div class="desc">
+            <strong>買い出しミッション</strong>
+            <a href="https://maps.google.com/?q=高松三越">高松三越</a>等で讃岐牛や酒を調達。島での滞在が豊かになります [2]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">14:00</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=高松港旅客ターミナル">高松港</a>発 フェリー「めおん」</strong>
+            乗船20分。GWは毎時00分に出航 [4]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">14:30</div>
+        <div class="desc">
+            <strong><a href="https://www.airbnb.jp/rooms/33095033">ゲストハウス Megino</a> 到着</strong>
+            <div class="tip">
+                ・フルキッチン完備。海を眺めながら自炊やBBQを [5]<br>
+                ・バスタオル等のアメニティは有料（100-200円） [1, 5]
+            </div>
+        </div>
+    </div>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=琴平グランドホテル+桜の抄&destination=高松駅&waypoints=山内うどん|高松三越" class="map-btn">📍 2日目の全ルートを表示</a>
 </div>
-<div class="card">
-    <h3>🛒 買い出し推奨スポット</h3>
-    <ul class="shopping-list">
-        <li><strong>高松三越</strong>：豪華な惣菜、地元の名産品 [2, 6]</li>
-        <li><strong>エースワン</strong>：港から最も近いスーパー</li>
-    </ul>
-</div>
-<div class="card">
-    <p><span class="time">14:00</span> <strong><a href="https://maps.google.com/?q=高松港旅客ターミナル">高松港</a>発 フェリー</strong> [2, 8]</p>
-    <p>フェリー「めおん」で女木島へ。宿「Megino」でオーシャンビューの島時間を開始。 [6, 9]</p>
-</div>
-<a href="https://www.google.com/maps/dir/?api=1&origin=琴平グランドホテル+桜の抄&destination=高松駅&waypoints=山内うどん|高松三越" class="map-btn">📍 2日目のルートを表示</a>
 
-<h2>【3日目】5/4（月）：島を満喫し、完璧なフィナーレ</h2>
+<h2>Day 3：5/4(月) 旅のフィナーレ <span>船 → 徒歩・バス</span></h2>
 <div class="card">
-    <p><span class="time">14:00</span> <strong>女木島 出発</strong> [10, 11]</p>
-    <p>お昼過ぎまで島でリラックス。高松港に戻り「一鶴」で骨付鳥を堪能。 [10, 11]</p>
+    <div class="time-box">
+        <div class="time">〜14:00</div>
+        <div class="desc"><strong>女木島で「何もしない贅沢」を満喫</strong> [6, 7]</div>
+    </div>
+    <div class="time-box">
+        <div class="time">14:00</div>
+        <div class="desc"><strong>女木島発 → 14:20 高松港着</strong> [4, 7]</div>
+    </div>
+    <div class="time-box">
+        <div class="time">14:30</div>
+        <div class="desc"><strong>高松駅のコインロッカーに荷物を預ける</strong> [7]</div>
+    </div>
+    <div class="time-box">
+        <div class="time">15:00</div>
+        <div class="desc">
+            <strong>ランチ：<a href="https://maps.google.com/?q=一鶴+高松店">骨付鳥 一鶴（いっかく）</a></strong>
+            スパイシーな香川のソウルフード [7]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">16:30</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=特別名勝+栗林公園">特別名勝 栗林公園</a> 散策</strong>
+            夕暮れ時の美しい庭園美を堪能。空港バス停が目の前です [7, 8]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">19:02</div>
+        <div class="desc">
+            <strong><a href="https://maps.google.com/?q=栗林公園前（バス）">栗林公園前</a> バス停からリムジンバス乗車</strong>
+            成田便（20:30発）に最適な時刻 [9, 10]。交通系IC利用可 [11]。
+        </div>
+    </div>
+    <div class="time-box">
+        <div class="time">19:33</div>
+        <div class="desc"><strong>高松空港着</strong> [9]</div>
+    </div>
+    <div class="time-box">
+        <div class="time">20:30</div>
+        <div class="desc"><strong>GK448便にて成田へ出発</strong> [9, 10]</div>
+    </div>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=高松港&destination=高松空港&waypoints=一鶴+高松店|栗林公園" class="map-btn">📍 3日目の全ルートを表示</a>
 </div>
-<div class="card">
-    <p><span class="time">19:02</span> <strong><a href="https://maps.google.com/?q=栗林公園前（バス）">栗林公園前</a> バス乗車</strong> [8, 12]</p>
-    <p>20:30発の成田便（GK448）に最適なリムジンバス。19:33空港着。 [8, 12]</p>
-</div>
-<a href="https://www.google.com/maps/dir/?api=1&origin=高松港&destination=高松空港&waypoints=一鶴+高松店|栗林公園" class="map-btn">📍 3日目のルートを表示</a>
 
-<div class="card" style="margin-top: 30px; background-color: #f1f5f9; border: 1px solid #cbd5e1;">
-    <h3>🔗 公式リンク集</h3>
+<div class="card" style="background: #f8fafc;">
+    <h3>🔗 リアルタイム確認用リンク</h3>
     <ul>
-        <li>🚢 <a href="https://meon.co.jp/access" target="_blank">女木島フェリー「めおん」時刻表</a> [13]</li>
-        <li>🚌 <a href="https://www.kotoden.co.jp/publichtm/bus/limousine/index.html" target="_blank">空港リムジンバス案内</a> [13]</li>
+        <li>🚢 <a href="https://meon.co.jp/access">女木島フェリー「めおん」時刻表</a> [4]</li>
+        <li>🚌 <a href="https://www.kotoden.co.jp/publichtm/bus/limousine/index.html">空港リムジンバス案内</a> [4, 10]</li>
     </ul>
 </div>
 
